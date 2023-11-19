@@ -31,7 +31,6 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
   line-height: 1.1;
 }
 
@@ -72,6 +71,12 @@ button:focus-visible {
 }
 
 
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr auto;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -80,21 +85,13 @@ button:focus-visible {
   border-bottom: 1px solid grey;
 }
 
-
-.wrapper {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: 1fr auto;
-  height: 100vh; /* Set the height to 100% of the viewport height */
-}
-
 .nav {
   grid-row: 1;
   grid-column: 1 / span 2;
   display: flex;
   justify-content: flex-end;
   gap: 10px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid grey;
 }
 
 main {
